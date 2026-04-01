@@ -34,7 +34,7 @@ def cadastrar_usuario(nome):
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             
             # Procura rostos na imagem
-            rostos = face_recognition.face_encodings(rgb_frame)
+            rostos = face_recognition.face_encodings(rgb_frame, num_jitters=10)
             
             if len(rostos) > 0:
                 # Pega o primeiro rosto encontrado (caso tenha mais de uma pessoa na tela)
