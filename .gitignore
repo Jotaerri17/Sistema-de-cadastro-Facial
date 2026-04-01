@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+# Ignorar variáveis de ambiente (Senhas)
+.env
+
+# Ignorar pastas virtuais do Python (boa prática)
+__pycache__/
+venv/
+
 # Distribution / packaging
 .Python
 build/
