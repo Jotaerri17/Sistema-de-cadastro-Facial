@@ -15,7 +15,7 @@ def cadastrar_usuario(nome):
         ret, frame = video_capture.read()
 
         if not ret or frame is None:
-            print("[ERRO] Não foi possível acessar a câmera. Verifique as permissões do macOS!")
+            print("[ERRO] Não foi possível acessar a câmera. Verifique as permissões do seu sistema!")
             break
         
         # Mostra a imagem numa janela
